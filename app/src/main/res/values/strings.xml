@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">PreferenceDemo</string>
+
+    <string-array name="list_preference_entries_city">
+        <item>广州</item>
+        <item>深圳</item>
+        <item>饶平</item>
+        <item>厦门</item>
+    </string-array>
+    <string-array name="list_preference_entry_values_city">
+        <item>GuangZhou</item>
+        <item>ShenZhen</item>
+        <item>RaoPing</item>
+        <item>XiaMen</item>
+    </string-array>
+
+    <string-array name="list_preference_entries_fruit">
+        <item>西瓜</item>
+        <item>香蕉</item>
+        <item>苹果</item>
+        <item>梨子</item>
+
+    </string-array>
+
+    <string-array name="list_preference_entry_values_fruit">
+        <item>water_lemon</item>
+        <item>banana</item>
+        <item>apple</item>
+        <item>pear</item>
+    </string-array>
+</resources>

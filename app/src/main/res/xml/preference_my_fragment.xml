@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="三个开关按钮">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="my_checkbox_1"
+            android:summary="这是开关1的下一行"
+            android:title="这是开关1" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:dependency="my_checkbox_1"
+            android:key="my_checkbox_2"
+            android:summary="这是开关2的下一行"
+            android:title="这是开关2" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="my_checkbox_3"
+            android:summary="这是开关3的下一行"
+            android:title="这是开关3" />
+
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="文本框(标题)">
+        <EditTextPreference
+            android:defaultValue=" "
+            android:dialogTitle="文本-对话框-标题"
+            android:key="key_my_editText_preference_1"
+            android:summary="保存我的文本"
+            android:title="设置文本" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="列表框">
+        <!-- todo 单选列表框-->
+        <ListPreference
+            android:dialogTitle="单选标题"
+            android:entries="@array/list_preference_entries_city"
+            android:entryValues="@array/list_preference_entry_values_city"
+            android:key="key_my_single_select_list_preference"
+            android:summary="选择所在的城市"
+            android:title="城市" />
+
+        <!-- todo 多选列表框-->
+        <MultiSelectListPreference
+            android:dialogTitle="多选标题"
+            android:entries="@array/list_preference_entries_fruit"
+            android:entryValues="@array/list_preference_entry_values_fruit"
+            android:key="key_my_multi_select_list_preference"
+            android:summary="喜欢的水果"
+            android:title="水果" />
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="自定义Preference">
+        <com.by5388.demo.preference.CustomPreference
+            android:defaultValue="10"
+            android:title="点击计数"
+            android:summary="点击+1"
+            android:key="key_my_custom_preference" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
